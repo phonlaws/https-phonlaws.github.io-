@@ -1,0 +1,11 @@
+[
+  {"user":"admin","pin_hash":"scrypt:32768:8:1$IVtyFlgx3ZN2R38p$a9c174c4d2f6f1b7952e512d7beba08c61fa55d87f31f7419eb5162d655b7223862773e0af4d073ee65d4d7fca2b9ca000e290b87d1c537a85a08d90343cdb05","role":"admin"},
+  {"user":"นาย กฤษดา มโนดุล","pin_hash":"scrypt:32768:8:1$aYUPb5H8mz655SLG$88cfe1463b41bee16bfc2bac4f0668f50fc37f79d7fa08a3b6d43ab0d0b01449f68efee0fd31af79333b389e98e7fdf8bb8956594e28ed67673c9af8b8b4a17d"},
+  {"user":"นาย พลวัฒน์ สุขสำราญ","pin_hash":"scrypt:32768:8:1$aYUPb5H8mz655SLG$88cfe1463b41bee16bfc2bac4f0668f50fc37f79d7fa08a3b6d43ab0d0b01449f68efee0fd31af79333b389e98e7fdf8bb8956594e28ed67673c9af8b8b4a17d"},
+  {"user":"นาย ธนกฤต ราชสีห์","pin_hash":"scrypt:32768:8:1$aYUPb5H8mz655SLG$88cfe1463b41bee16bfc2bac4f0668f50fc37f79d7fa08a3b6d43ab0d0b01449f68efee0fd31af79333b389e98e7fdf8bb8956594e28ed67673c9af8b8b4a17d"},
+  {"user":"ธีรวัฒน์ เพ็ญสวัสดิ์","pin_hash":"scrypt:32768:8:1$aYUPb5H8mz655SLG$88cfe1463b41bee16bfc2bac4f0668f50fc37f79d7fa08a3b6d43ab0d0b01449f68efee0fd31af79333b389e98e7fdf8bb8956594e28ed67673c9af8b8b4a17d"},
+  {"user":"นาย มารุตร บุณเรือง","pin_hash":"scrypt:32768:8:1$aYUPb5H8mz655SLG$88cfe1463b41bee16bfc2bac4f0668f50fc37f79d7fa08a3b6d43ab0d0b01449f68efee0fd31af79333b389e98e7fdf8bb8956594e28ed67673c9af8b8b4a17d"},
+  {"user":"นาย กิตติศักดิ์ วงษ์จิ","pin_hash":"scrypt:32768:8:1$aYUPb5H8mz655SLG$88cfe1463b41bee16bfc2bac4f0668f50fc37f79d7fa08a3b6d43ab0d0b01449f68efee0fd31af79333b389e98e7fdf8bb8956594e28ed67673c9af8b8b4a17d"},
+  {"user":"นาย อนุกูล ทองหุ้ม","pin_hash":"scrypt:32768:8:1$aYUPb5H8mz655SLG$88cfe1463b41bee16bfc2bac4f0668f50fc37f79d7fa08a3b6d43ab0d0b01449f68efee0fd31af79333b389e98e7fdf8bb8956594e28ed67673c9af8b8b4a17d"},
+  {"user":"นาย วีรเดช ปทุมรัตน์","pin_hash":"scrypt:32768:8:1$aYUPb5H8mz655SLG$88cfe1463b41bee16bfc2bac4f0668f50fc37f79d7fa08a3b6d43ab0d0b01449f68efee0fd31af79333b389e98e7fdf8bb8956594e28ed67673c9af8b8b4a17d"}
+]

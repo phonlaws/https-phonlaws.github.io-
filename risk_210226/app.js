@@ -43,9 +43,6 @@ let state = { jobs: [], overdueMinutes: 120, updatedAt: null };
 let currentUser = null;
 let currentRole = "user"; // "user" | "admin"
 
-// default admin username (ตรงกับ users.json ของคุณ)
-const DEFAULT_ADMIN_NAME = "admin";
-
 // -------------------- Utils --------------------
 function thTime(iso){
   return new Date(iso).toLocaleTimeString("th-TH", { hour: "2-digit", minute: "2-digit" });
@@ -113,7 +110,7 @@ function setAdminMode(on){
   // เคลียร์ช่องที่ไม่ใช้ + โฟกัส
   if(on){
     if(loginUser) loginUser.value = "";
-    if(loginAdminUser && !loginAdminUser.value) loginAdminUser.value = DEFAULT_ADMIN_NAME;
+    if(loginAdminUser) loginAdminUser.value = "";   // ✅ บังคับให้ว่าง ต้องพิมพ์เอง
     setTimeout(()=> loginAdminUser?.focus(), 50);
   }else{
     if(loginAdminUser) loginAdminUser.value = "";
@@ -132,6 +129,8 @@ function showLogin(msg){
   if(modeUser) modeUser.checked = true;
   if(modeAdmin) modeAdmin.checked = false;
   setAdminMode(false);
+
+  if(loginAdminUser) loginAdminUser.value = ""; // ✅ กันค่าค้าง
 
   loginModal.style.display = "block";
   setTimeout(()=> loginPin?.focus(), 50);
@@ -581,9 +580,27 @@ function bindCloseButtons(){
   });
 }
 
+function applyRiskTheme(){
+  const confined = document.getElementById("riskConfined");
+  const height = document.getElementById("riskHeight");
+
+  // ถ้าไม่เจอ radio (เช่น หน้า kiosk) ไม่ต้องทำอะไร
+  if(!confined || !height) return;
+
+  const set = () => {
+    const type = (document.querySelector('input[name="riskType"]:checked')?.value) || "confined";
+    document.body.dataset.risk = type; // "confined" | "height"
+  };
+
+  confined.addEventListener("change", set);
+  height.addEventListener("change", set);
+  set(); // เรียกครั้งแรกตอนโหลดหน้า
+}
+
 // -------------------- Boot --------------------
 async function boot(){
   setStartTimeDefault();
+  applyRiskTheme();
   bindForm();
   bindCloseButtons();
   bindLoginUI();

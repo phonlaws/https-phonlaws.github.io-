@@ -51,7 +51,7 @@
   </header>
 
   <main class="container">
-    <section class="panel">
+    <section class="panel panel-open">
       <div class="panel-head">
         <h2>ข้อมูลเปิดงานเสี่ยง</h2>
         <span class="hint">กรอกให้ครบ แล้วกด “เปิดงาน”</span>
@@ -92,6 +92,9 @@
             <label>ชื่อผู้เปิด</label>
             <select id="requester">
               <option value="" selected>— เลือกผู้เปิด (ไม่บังคับ) —</option>
+              <option>ผจก.โกญจนาท สังฆโสภน</option>
+              <option>ผจก.ธาร เที่ยงเจริญ</option>
+              <option>ผชก.ทวี ทะปะละ</option>
               <option>นาย กฤษดา มโนดุล</option>
               <option>นาย พลวัฒน์ สุขสำราญ</option>
               <option>นาย ธนกฤต ราชสีห์</option>
@@ -212,14 +215,14 @@
         <!-- ADMIN: Type username -->
         <div id="adminUserWrap" style="display:none;">
           <label style="font-weight:800; font-size:14px; color:rgba(233,238,252,.8); margin-top:8px;">
-            ชื่อผู้ใช้งาน (Admin)
+            ชื่อผู้ใช้งาน (ADMIN)
           </label>
           <input id="loginAdminUser" class="login-input"
                  type="text"
-                 placeholder="admin"
+                 placeholder="user admin"
                  autocomplete="off" />
           <div style="margin-top:6px; color:rgba(233,238,252,.65); font-size:13px;">
-            * ต้องพิมพ์ให้ตรงกับชื่อ admin ใน <b>users.json</b>
+            * 
           </div>
         </div>
 
